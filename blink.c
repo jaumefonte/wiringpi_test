@@ -5,7 +5,7 @@
 void main(void)
 {
     printf("Program is starting ... \n");
-    wirinPiSetup();
+    wiringPiSetup();
 
     pinMode(ledPin, OUTPUT);
     while(1)
