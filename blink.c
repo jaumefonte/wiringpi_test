@@ -8,6 +8,11 @@ void inthand(int signum)
 {
     stop = 1;
 }
+void cleanPin(int pin)
+{
+digitalWrite(pin, LOW);
+pinMode(pin INPUT);
+}
 void main(void)
 {
     printf("Program is starting ... \n");
@@ -23,5 +28,5 @@ void main(void)
         printf("led turned off <<<<\n");
         delay(1000);
     }
-    digitalWrite(ledPin, LOW);
+    cleanPin(ledPin);
 }
