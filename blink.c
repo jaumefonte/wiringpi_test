@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <signal.h>
 
-volatile sig_atomic_t stop{};
+volatile sig_atomic_t stop;
 #define ledPin 0
 void inthand(int signum)
 {
