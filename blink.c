@@ -10,8 +10,8 @@ void inthand(int signum)
 }
 void cleanPin(int pin)
 {
-digitalWrite(pin, LOW);
-pinMode(pin INPUT);
+    digitalWrite(pin, LOW);
+    pinMode(pin, INPUT);
 }
 void main(void)
 {
