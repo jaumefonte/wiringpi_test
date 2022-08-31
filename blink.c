@@ -8,7 +8,6 @@ void main(void)
     wirinPiSetup();
 
     pinMode(ledPin, OUTPUT);
-    printf("Using pin "+ledPin+"\n");
     while(1)
     {
         digitalWrite(ledPin, HIGH);
